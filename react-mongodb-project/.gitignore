@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios de build
+dist/
+build/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ambiente de desenvolvimento
+.env
+.env.* 
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+
+# Arquivos de dependências do Yarn (se estiver usando Yarn)
+.pnp.*
+.yarn/*
