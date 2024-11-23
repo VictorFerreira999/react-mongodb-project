@@ -13,8 +13,10 @@ pipeline {
         stage('Build and Deploy') {
             steps {
                 echo 'Construindo e iniciando os contêineres com Docker Compose...'
-                sh 'docker-compose down || true' // Para garantir que contêineres antigos sejam parados
-                sh 'docker-compose up --build -d'
+                sh '''
+                docker-compose down || true
+                docker-compose up --build -d
+                '''
             }
         }
     }
